@@ -1,0 +1,26 @@
+{
+  "name": "compressor",
+  "version": "0.0.1",
+  "author": "Scott Taylor <scott@learnup.com>",
+  "description": "Javascript compressor",
+  "contributors": [
+    {
+      "name": "Scott Taylor",
+      "email": "scott@railsnewbie.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smtlaissezfaire/compressor.git"
+  },
+  "dependencies" : {
+    "underscore": "*",
+    "async": "*",
+    "commander": "*",
+    "colors": "*",
+    "uuid": "*",
+    "uglify-js": "*",
+    "js-yaml": "*",
+    "glob": "*"
+  }
+}

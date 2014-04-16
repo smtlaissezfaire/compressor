@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+(function() {
+  "use strict";
+
+  var _ = require('underscore');
+  var program = require('commander');
+  var compressor = require('./../lib/compressor');
+
+  program.
+    version('0.0.1').
+    option('-p, --base-path [path]', "Run compressor in path [path].").
+    parse(process.argv);
+
+  var initOptions = {
+    base_path: process.cwd()
+  };
+
+  // console.log('program.options', program);
+  // console.log('----------------');
+  //
+  // initOptions = _.extend(program.options, initOptions);
+
+  compressor.run(initOptions);
+}());
